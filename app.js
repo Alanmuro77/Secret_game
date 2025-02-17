@@ -1,4 +1,4 @@
-let numeroSecreto = 0;
+let numeroSecreto = 0;    
 let intentos = 0;
 let listaNumerosSorteados = [];
 let numeroMaximo = 10;
@@ -19,8 +19,8 @@ function verificarIntento() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
 
     if(intentos === numMaxIntentos){
-        asignarTextoElemento('h1', 'Shinra Tensei!!!!!!!!!!!!!!');
-        asignarTextoElemento ('p','I am sorry commander but  the game is over');
+        asignarTextoElemento('h1', '#loser #bot');
+        asignarTextoElemento ('p','I am sorry karen pop, but  the game is over');
         document.getElementById('reiniciar').removeAttribute('disabled');
         //reiniciarJuego();
     } else {
@@ -68,8 +68,8 @@ function generarNumeroSecreto() {
 }
 
 function condicionesIniciales() {
-    asignarTextoElemento('h1','Juego del número secreto!');
-    asignarTextoElemento('p',`Indica un número del 1 al ${numeroMaximo}`);
+    asignarTextoElemento('h1','Secret number game!');
+    asignarTextoElemento('p',`indicates a number from 1 to ${numeroMaximo}`);
     numeroSecreto = generarNumeroSecreto();
     intentos = 1;
     
