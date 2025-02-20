@@ -1,8 +1,8 @@
 let numeroSecreto = 0;    
 let intentos = 0;
 let listaNumerosSorteados = [];
-let numeroMaximo = 10;
-let numMaxIntentos = 3;
+let numeroMaximo = 20;
+let numMaxIntentos = 5;
 
 console.log(typeof(intentos));
 console.log(typeof(numMaxIntentos));
