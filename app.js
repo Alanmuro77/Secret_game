@@ -1,8 +1,8 @@
 let numeroSecreto = 0;    
 let intentos = 0;
 let listaNumerosSorteados = [];
-let numeroMaximo = 20;
-let numMaxIntentos = 5;
+let numeroMaximo = 10;
+let numMaxIntentos = 3;
 
 console.log(typeof(intentos));
 console.log(typeof(numMaxIntentos));
@@ -19,8 +19,8 @@ function verificarIntento() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
 
     if(intentos === numMaxIntentos){
-        asignarTextoElemento('h1', '#loser #bot');
-        asignarTextoElemento ('p','I am sorry karen pop, but  the game is over');
+        asignarTextoElemento('h1', 'Amateratsuu!!!');
+        asignarTextoElemento ('p',"I'm sorry Commander, but  the game is over");
         document.getElementById('reiniciar').removeAttribute('disabled');
         //reiniciarJuego();
     } else {
